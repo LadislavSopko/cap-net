@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>cap-net</id>
+    <id>DotNet.CommonAlertingProtocol</id>
     <version>3.0.1</version>
-    <title>CAPNet</title>
+    <title>CAP for .NET</title>
     <authors>Matt Chandler, Teamnet, Damian Hintz</authors>
     <owners>Damian Hintz</owners>
-    <projectUrl>https://github.com/damian.hintz/cap-net</projectUrl>
+    <projectUrl>https://github.com/damianhintz/cap-net</projectUrl>
     <iconUrl>http://docs.oasis-open.org/emergency/edxl-cap-logo/v1.0/cnd01/CAP-Logos/CAP-Icon-L.png</iconUrl>
     <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

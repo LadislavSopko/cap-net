@@ -62,3 +62,4 @@ UpgradeLog*.XML
 
 # NuGet
 packages/
+.vs
