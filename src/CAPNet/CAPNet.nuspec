@@ -2,16 +2,17 @@
 <package >
   <metadata>
     <id>cap-net</id>
-    <version>3.0.0</version>
+    <version>3.0.1</version>
     <title>CAPNet</title>
-    <authors>Matt Chandler, Teamnet</authors>
-    <owners>Teamnet</owners>
-    <projectUrl>https://github.com/TeamnetGroup/cap-net</projectUrl>
+    <authors>Matt Chandler, Teamnet, Damian Hintz</authors>
+    <owners>Damian Hintz</owners>
+    <projectUrl>https://github.com/damian.hintz/cap-net</projectUrl>
     <iconUrl>http://docs.oasis-open.org/emergency/edxl-cap-logo/v1.0/cnd01/CAP-Logos/CAP-Icon-L.png</iconUrl>
     <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A Common Alerting Protocol serialization library for the .NET framework.</description>
-    <releaseNotes>Breaking change: replace double properties by decimals</releaseNotes>
+    <releaseNotes>FIXED: 'code' collection parsing</releaseNotes>
+    <copyright>Copyright 2017</copyright>
     <tags>CAP</tags>
   </metadata>
 </package>
