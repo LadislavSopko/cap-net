@@ -127,14 +127,14 @@ namespace CAPNet.Tests
                 Source = "source",
                 //   <restriction>restriction</restriction>
                 Restriction = "restriction",
-                //   <code>code</code>
-                Code = "code",
                 //   <note>note</note>
                 Note = "note",
                 //   <references>references</references>
                 
             };
 
+            //<code>code</code>
+            orangeAlert.Codes.Add("code");
             //<references>references reference2</references>
             orangeAlert.References.Add("references");
             orangeAlert.References.Add("reference2");

@@ -10,7 +10,8 @@ namespace EDXLNet.Tests
         public void CanCreateXElementFromEdxlDistribution()
         {
             var alert1 = new Alert { Identifier = "Alert1" };
-            var alert2 = new Alert { Identifier = "Alert2", Code = "Secret" };
+            var alert2 = new Alert { Identifier = "Alert2" };
+            alert2.Codes.Add("Secret");
 
             var edxlDistribution = new EdxlDistribution
             {

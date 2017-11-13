@@ -84,11 +84,12 @@ namespace CAPNet
                 alert.Note = noteNode.Value;
             }
 
-            var codeNode = alertElement.Element(capNamespace + "code");
-            if (codeNode != null)
-            {
-                alert.Code = codeNode.Value;
-            }
+            var codeNodes = alertElement.Elements(capNamespace + "code");
+            var codes = from codeNode in codeNodes
+                        where codeNode != null
+                        select codeNode.Value;
+
+            alert.Codes.AddRange(codes);
 
             var addressesNode = alertElement.Element(capNamespace + "addresses");
             var addressNodeValue = addressesNode?.Value;
