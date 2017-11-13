@@ -17,6 +17,7 @@ namespace CAPNet.Models
             addresses = new List<string>();
             incidents = new List<string>();
             references = new List<string>();
+            Codes = new List<string>();
         }
 
         /// <summary>
@@ -207,7 +208,7 @@ namespace CAPNet.Models
         ///     </item>
         ///   </list>
         /// </remarks>
-        public string Code { get; set; }
+        public ICollection<string> Codes { get; }
 
         /// <summary>
         /// The text describing the purpose or significance of the alert message 

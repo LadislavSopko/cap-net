@@ -53,7 +53,7 @@ namespace CAPNet
             AddElementIfHasContent(alertElement, "restriction", alert.Restriction);
             string addressesContent = alert.Addresses.ElementsDelimitedBySpace();
             AddElementIfHasContent(alertElement, "addresses", addressesContent);
-            AddElementIfHasContent(alertElement, "code", alert.Code);
+            alertElement.Add(alert.Codes.Select(code => new XElement(CAP12Namespace + "code", code)));
             AddElementIfHasContent(alertElement, "note", alert.Note);
             string referencesContent = alert.References.ElementsDelimitedBySpace();
             AddElementIfHasContent(alertElement, "references", referencesContent);

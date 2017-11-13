@@ -9,7 +9,8 @@
   <scope>Public</scope>
   <restriction>restriction</restriction>
   <addresses>"address 1" address2 " address 3" address4</addresses>
-  <code>code</code>
+  <code>code1</code>
+  <code>code2</code>
   <note>note</note>
   <references>reference1 reference2 reference3</references>
   <incidents>incident1 "very bad incident" "very very bad  incident "</incidents>
