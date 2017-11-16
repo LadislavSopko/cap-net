@@ -10,6 +10,7 @@
   <restriction>restriction</restriction>
   <addresses>"address 1" address2 " address 3" address4</addresses>
   <code>code</code>
+  <code>code2</code>
   <note>note</note>
   <references>references reference2</references>
   <incidents>" incident0" incident1 incident2 "bad incident" "another bad incident"</incidents>
