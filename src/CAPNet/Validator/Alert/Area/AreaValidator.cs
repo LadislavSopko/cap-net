@@ -37,13 +37,7 @@ namespace CAPNet
         /// <returns></returns>
         private static IEnumerable<Error> GetErrors(Area area)
         {
-            var areaValidators = from type in Assembly.GetExecutingAssembly().GetTypes()
-                                 where typeof(IValidator<Area>).IsAssignableFrom(type)
-                                 select (IValidator<Area>)Activator.CreateInstance(type, area);
-
-            return from validator in areaValidators
-                   from error in validator.Errors
-                   select error;
+            return area.GetErrorsFromAllEntityValidators();
         }
 
         /// <summary>

@@ -23,7 +23,7 @@ namespace CAPNet
             get
             {
                 if (!IsValid)
-                    yield return new WGS84Error();
+                    yield return new Wgs84Error();
             }
         }
 
@@ -34,7 +34,7 @@ namespace CAPNet
         {
             get
             {
-                var wgs84Validator = new WGS84Validator(Entity.Center);
+                var wgs84Validator = new Wgs84Validator(Entity.Center);
                 return !wgs84Validator.Errors.Any();
             }
         }

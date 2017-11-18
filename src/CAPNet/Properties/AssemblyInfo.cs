@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Reflection;
+using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("cap-net")]
 [assembly: AssemblyDescription("A Common Alerting Protocol serialization library for the .NET framework.")]
@@ -10,5 +11,7 @@ using System.Reflection;
 [assembly: AssemblyVersion("3.0.0.0")]
 [assembly: AssemblyFileVersion("3.0.0.0")]
 [assembly: AssemblyInformationalVersion("3.0")]
+
+[assembly: ComVisible(false)]
 
 [assembly: CLSCompliant(true)]
