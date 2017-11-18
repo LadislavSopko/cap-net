@@ -6,7 +6,7 @@ namespace CAPNet
     /// <summary>
     /// Verifies if a set of coordinates respect the WGS 84 standard !
     /// </summary>
-    public class WGS84Validator : Validator<Coordinate>
+    public class Wgs84Validator : Validator<Coordinate>
     {
         private const int minLongitude = -180;
         private const int maxLongitude = 180;
@@ -17,7 +17,7 @@ namespace CAPNet
         /// 
         /// </summary>
         /// <param name="coordinate"></param>
-        public WGS84Validator(Coordinate coordinate) : base(coordinate) { }
+        public Wgs84Validator(Coordinate coordinate) : base(coordinate) { }
 
         /// <summary>
         /// 
@@ -27,7 +27,7 @@ namespace CAPNet
             get
             {
                 if (!IsValid)
-                    yield return new WGS84Error();
+                    yield return new Wgs84Error();
             }
         }
 

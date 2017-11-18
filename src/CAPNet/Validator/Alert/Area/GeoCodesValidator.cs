@@ -48,13 +48,7 @@ namespace CAPNet
         /// <returns></returns>
         private static IEnumerable<Error> GetErrors(GeoCode geoCode)
         {
-            var geocodeValidators = from type in Assembly.GetExecutingAssembly().GetTypes()
-                                    where typeof(IValidator<GeoCode>).IsAssignableFrom(type)
-                                    select (IValidator<GeoCode>)Activator.CreateInstance(type, geoCode);
-
-            return from validator in geocodeValidators
-                   from error in validator.Errors
-                   select error;
+            return geoCode.GetErrorsFromAllEntityValidators();
         }
     }
 }

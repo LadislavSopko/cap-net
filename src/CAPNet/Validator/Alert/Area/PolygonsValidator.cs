@@ -48,13 +48,7 @@ namespace CAPNet
         /// <returns></returns>
         private static IEnumerable<Error> GetErrors(Polygon polygon)
         {
-            var polygonValidators = from type in Assembly.GetExecutingAssembly().GetTypes()
-                                    where typeof(IValidator<Polygon>).IsAssignableFrom(type)
-                                    select (IValidator<Polygon>)Activator.CreateInstance(type, polygon);
-
-            return from validator in polygonValidators
-                   from error in validator.Errors
-                   select error;
+            return polygon.GetErrorsFromAllEntityValidators();
         }
     }
 }

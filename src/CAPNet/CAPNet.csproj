@@ -10,12 +10,13 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CAPNet</RootNamespace>
     <AssemblyName>CAPNet</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
-    <TargetFrameworkProfile>Profile19</TargetFrameworkProfile>
-    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,12 +44,6 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
   </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
   <ItemGroup>
     <Compile Include="CollectionExtensions.cs" />
     <Compile Include="Models\Circle.cs" />
@@ -110,7 +105,7 @@
     <Compile Include="Validator\Alert\SenderValidator.cs" />
     <Compile Include="Validator\Alert\SentRequiredValidator.cs" />
     <Compile Include="Validator\Alert\StatusRequiredValidator.cs" />
-    <Compile Include="Validator\Alert\WGS84Validator.cs" />
+    <Compile Include="Validator\Alert\Wgs84Validator.cs" />
     <Compile Include="Validator\Errors\AddressesRequiredWhenScopeError.cs" />
     <Compile Include="Validator\Errors\CeilingExistenceError.cs" />
     <Compile Include="Validator\Errors\DigestError.cs" />
@@ -149,7 +144,8 @@
     <Compile Include="Validator\Errors\SenderRequiredError.cs" />
     <Compile Include="Validator\Errors\SentRequiredError.cs" />
     <Compile Include="Validator\Errors\StatusRequiredError.cs" />
-    <Compile Include="Validator\Errors\WGS84Error.cs" />
+    <Compile Include="Validator\Errors\Wgs84Error.cs" />
+    <Compile Include="Validator\Extensions.cs" />
     <Compile Include="Validator\IValidator.cs" />
     <Compile Include="Validator\Errors\Required\RequiredFieldError.cs" />
     <Compile Include="Validator\Errors\Required\SeverityRequiredError.cs" />
@@ -170,11 +166,7 @@
     <None Include="CAPNet.ruleset">
       <SubType>Designer</SubType>
     </None>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Analyzer Include="..\packages\SonarLint.1.8.0\analyzers\SonarLint.CSharp.dll" />
-    <Analyzer Include="..\packages\SonarLint.1.8.0\analyzers\SonarLint.dll" />
+    <None Include="project.json" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />

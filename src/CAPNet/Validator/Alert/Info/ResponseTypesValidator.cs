@@ -48,13 +48,7 @@ namespace CAPNet
         /// <returns></returns>
         private static IEnumerable<Error> GetErrors(ResponseType responseType)
         {
-            var responseTypeValidators = from type in Assembly.GetExecutingAssembly().GetTypes()
-                                         where typeof(IValidator<ResponseType>).IsAssignableFrom(type)
-                                         select (IValidator<ResponseType>)Activator.CreateInstance(type, responseType);
-
-            return from validator in responseTypeValidators
-                   from error in validator.Errors
-                   select error;
+            return responseType.GetErrorsFromAllEntityValidators();
         }
     }
 }

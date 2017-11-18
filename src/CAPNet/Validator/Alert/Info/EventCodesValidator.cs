@@ -48,13 +48,7 @@ namespace CAPNet
         /// <returns></returns>
         private static IEnumerable<Error> GetErrors(EventCode eventCode)
         {
-            var eventCodeValidators = from type in Assembly.GetExecutingAssembly().GetTypes()
-                                      where typeof(IValidator<EventCode>).IsAssignableFrom(type)
-                                      select (IValidator<EventCode>)Activator.CreateInstance(type, eventCode);
-
-            return from validator in eventCodeValidators
-                   from error in validator.Errors
-                   select error;
+            return eventCode.GetErrorsFromAllEntityValidators();
         }
     }
 }

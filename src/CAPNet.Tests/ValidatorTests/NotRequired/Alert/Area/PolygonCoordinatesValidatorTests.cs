@@ -22,7 +22,7 @@ namespace CAPNet
 
             var polygonCoordinatesValidator = new PolygonCoordinatesValidator(polygon);
             Assert.False(polygonCoordinatesValidator.IsValid);
-            Assert.Equal(typeof(WGS84Error),polygonCoordinatesValidator.Errors.ElementAt(0).GetType());
+            Assert.Equal(typeof(Wgs84Error),polygonCoordinatesValidator.Errors.ElementAt(0).GetType());
         }
     }
 }

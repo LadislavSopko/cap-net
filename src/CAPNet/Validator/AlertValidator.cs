@@ -45,14 +45,7 @@ namespace CAPNet
         /// <summary>
         /// 
         /// </summary>
-        public IEnumerable<Error> Errors
-        {
-            get
-            {
-                return from error in GetErrors(alert)
-                       select error;
-            }
-        }
+        public IEnumerable<Error> Errors => GetErrors(alert);
 
         /// <summary>
         /// 
@@ -61,13 +54,7 @@ namespace CAPNet
         /// <returns></returns>
         private static IEnumerable<Error> GetErrors(Alert alert)
         {
-            var alertValidator = from type in Assembly.GetExecutingAssembly().GetTypes()
-                                 where typeof(Validator<Alert>).IsAssignableFrom(type)
-                                 select (Validator<Alert>)Activator.CreateInstance(type, alert);
-
-            return from validator in alertValidator
-                   from error in validator.Errors
-                   select error;
+            return alert.GetErrorsFromAllEntityValidators();
         }
     }
 }

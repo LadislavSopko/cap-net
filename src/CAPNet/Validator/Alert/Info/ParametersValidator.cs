@@ -48,13 +48,7 @@ namespace CAPNet
         /// <returns></returns>
         private static IEnumerable<Error> GetErrors(Parameter parameter)
         {
-            var parametersValidators = from type in Assembly.GetExecutingAssembly().GetTypes()
-                                       where typeof(IValidator<Parameter>).IsAssignableFrom(type)
-                                       select (IValidator<Parameter>)Activator.CreateInstance(type, parameter);
-
-            return from validator in parametersValidators
-                   from error in validator.Errors
-                   select error;
+            return parameter.GetErrorsFromAllEntityValidators();
         }
     }
 }
