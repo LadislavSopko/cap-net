@@ -92,7 +92,7 @@ namespace CAPNet.Tests
         private void SevereThunderStormCap11ParseAndCreate()
         {
             string xmlContent = Xml.SevereThundertromCap11;
-            string xmlContentToCap12 = xmlContent.Replace(XmlCreator.CAP11Namespace.ToString(), XmlCreator.CAP12Namespace.ToString());
+            string xmlContentToCap12 = xmlContent.Replace(XmlCreator.Cap11Namespace.ToString(), XmlCreator.Cap12Namespace.ToString());
             XDocument originalDocument = XDocument.Parse(xmlContentToCap12);
 
             Alert alert = XmlParser.Parse(xmlContent).First();
@@ -108,7 +108,7 @@ namespace CAPNet.Tests
         private void HomeLandSecurityAlertCap11ParseAndCreate()
         {
             string xmlContent = Xml.HomeLandSecurityAlertCap11;
-            string xmlContentToCap12 = xmlContent.Replace(XmlCreator.CAP11Namespace.ToString(), XmlCreator.CAP12Namespace.ToString());
+            string xmlContentToCap12 = xmlContent.Replace(XmlCreator.Cap11Namespace.ToString(), XmlCreator.Cap12Namespace.ToString());
             XDocument originalDocument = XDocument.Parse(xmlContentToCap12);
 
             Alert alert = XmlParser.Parse(xmlContent).First();
@@ -124,7 +124,7 @@ namespace CAPNet.Tests
         private void EarthquakeCap11ParseAndCreate()
         {
             string xmlContent = Xml.EarthquakeCap11;
-            string xmlContentToCap12 = xmlContent.Replace(XmlCreator.CAP11Namespace.ToString(), XmlCreator.CAP12Namespace.ToString());
+            string xmlContentToCap12 = xmlContent.Replace(XmlCreator.Cap11Namespace.ToString(), XmlCreator.Cap12Namespace.ToString());
             XDocument originalDocument = XDocument.Parse(xmlContentToCap12);
 
             Alert alert = XmlParser.Parse(xmlContent).First();
@@ -140,7 +140,7 @@ namespace CAPNet.Tests
         private void AmberParseAndCreate()
         {
             string xmlContent = Xml.AmberAlertCap11;
-            string xmlContentToCap12 = xmlContent.Replace(XmlCreator.CAP11Namespace.ToString(), XmlCreator.CAP12Namespace.ToString());
+            string xmlContentToCap12 = xmlContent.Replace(XmlCreator.Cap11Namespace.ToString(), XmlCreator.Cap12Namespace.ToString());
             XDocument originalDocument = XDocument.Parse(xmlContentToCap12);
 
             Alert alert = XmlParser.Parse(xmlContent).First();
@@ -156,7 +156,7 @@ namespace CAPNet.Tests
         private void MultipleThunderstorm12ParseAndCreate()
         {
             string xmlContent = Xml.MultipleThunderstorm12Xml;
-            string xmlContentToCap12 = xmlContent.Replace(XmlCreator.CAP11Namespace.ToString(), XmlCreator.CAP12Namespace.ToString());
+            string xmlContentToCap12 = xmlContent.Replace(XmlCreator.Cap11Namespace.ToString(), XmlCreator.Cap12Namespace.ToString());
             XDocument originalDocument = XDocument.Parse(xmlContentToCap12);
 
             IEnumerable<Alert> alerts = XmlParser.Parse(xmlContent);
@@ -172,7 +172,7 @@ namespace CAPNet.Tests
         public void MultipleInfoAndAlertParseAndCreate()
         {
             string xmlContent = Xml.MultipleAlertAndInfoThunderstorm;
-            string xmlContentToCap12 = xmlContent.Replace(XmlCreator.CAP11Namespace.ToString(), XmlCreator.CAP12Namespace.ToString());
+            string xmlContentToCap12 = xmlContent.Replace(XmlCreator.Cap11Namespace.ToString(), XmlCreator.Cap12Namespace.ToString());
             XDocument originalDocument = XDocument.Parse(xmlContentToCap12);
 
             IEnumerable<Alert> alerts = XmlParser.Parse(xmlContent);

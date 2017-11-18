@@ -50,7 +50,7 @@ namespace CAPNet.Tests
         {
             var alertElement = XmlCreator.Create(Alert);
 
-            var senderElement = alertElement.Element(XmlCreator.CAP12Namespace + "sender");
+            var senderElement = alertElement.Element(XmlCreator.Cap12Namespace + "sender");
 
             Assert.NotNull(senderElement);
             Assert.Equal(Sender, senderElement.Value);
@@ -61,7 +61,7 @@ namespace CAPNet.Tests
         {
             var alertElement = XmlCreator.Create(Alert);
 
-            var statusElement = alertElement.Element(XmlCreator.CAP12Namespace + "status");
+            var statusElement = alertElement.Element(XmlCreator.Cap12Namespace + "status");
 
             Assert.NotNull(statusElement);
             Assert.Equal("Test", statusElement.Value);
@@ -72,7 +72,7 @@ namespace CAPNet.Tests
         {
             var alertElement = XmlCreator.Create(Alert);
 
-            var sentElement = alertElement.Element(XmlCreator.CAP12Namespace + "sent");
+            var sentElement = alertElement.Element(XmlCreator.Cap12Namespace + "sent");
 
             Assert.NotNull(sentElement);
             Assert.Equal("2014-06-10T10:35:23-03:00", sentElement.Value);
