@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>DotNet.CommonAlertingProtocol</id>
-    <version>3.0.1</version>
+    <version>1.0.0</version>
     <title>CAP for .NET</title>
     <authors>Matt Chandler, Teamnet, Damian Hintz</authors>
     <owners>Damian Hintz</owners>
@@ -10,8 +10,8 @@
     <iconUrl>http://docs.oasis-open.org/emergency/edxl-cap-logo/v1.0/cnd01/CAP-Logos/CAP-Icon-L.png</iconUrl>
     <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>A Common Alerting Protocol serialization library for the .NET framework.</description>
-    <releaseNotes>FIXED: 'code' collection parsing</releaseNotes>
+    <description>A Common Alerting Protocol library for the .NET framework.</description>
+    <releaseNotes>New: converted portable to standard</releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>CAP</tags>
   </metadata>
