@@ -390,8 +390,16 @@ namespace CAPNet
 
             var uriNode = resourceElement.Element(capNamespace + "uri");
             if (uriNode != null)
-                resource.Uri = new Uri(uriNode.Value);
-
+            {
+                if (Uri.IsWellFormedUriString(uriNode.Value, UriKind.Absolute))
+                {
+                    resource.Uri = new Uri(uriNode.Value);
+                }
+                else
+                {
+                    resource.Uri = new Uri(uriNode.Value, UriKind.Relative);
+                }
+            }
             var derefUriNode = resourceElement.Element(capNamespace + "derefUri");
             if (derefUriNode != null && IsBase64(derefUriNode.Value))
                 resource.DereferencedUri = Convert.FromBase64String(derefUriNode.Value);

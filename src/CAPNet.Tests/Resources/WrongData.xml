@@ -47,7 +47,7 @@
       <resourceDesc>Image file (GIF)</resourceDesc>
       <mimeType>image/gif</mimeType>
       <size>size</size>
-      <uri>http://www.dhs.gov/dhspublic/getAdvisoryImage</uri>
+      <uri>dhspublic/getAdvisoryImage</uri>
       <derefUri>abc123</derefUri>
       <digest>digest</digest>
     </resource>
