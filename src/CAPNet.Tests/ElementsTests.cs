@@ -40,6 +40,15 @@ namespace CAPNet.Tests
         }
 
         [Fact]
+        public void CanParseWithRelativeUri()
+        {
+            //<uri>dhspublic/getAdvisoryImage</uri> is valid relative uri
+            var alert = XmlParser.Parse(Xml.WrongData).First();
+            var resource = alert.Info.First().Resources.First();
+            Assert.NotNull(resource.Uri);
+        }
+
+        [Fact]
         public void CanParseWithWrongDerefUri()
         {
             //<derefUri>abc123</derefUri> not a valid base64
