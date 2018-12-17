@@ -54,16 +54,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CAPNet\CAPNet.csproj">
-      <Project>{2834992F-FA0C-4837-9916-1928847EA9C3}</Project>
-      <Name>CAPNet</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\EDXLNet\EDXLNet.csproj">
-      <Project>{3D20BBC7-358C-4EEF-8F85-258A8E7D7AC2}</Project>
-      <Name>EDXLNet</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

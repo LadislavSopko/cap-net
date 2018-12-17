@@ -1,23 +1,13 @@
-﻿Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
-VisualStudioVersion = 14.0.22823.1
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAPNet", "CAPNet\CAPNet.csproj", "{2834992F-FA0C-4837-9916-1928847EA9C3}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{7AD66BB8-9A97-4EEE-99D9-FA283DA9F159}"
-	ProjectSection(SolutionItems) = preProject
-		CAPNet\CAPNet.nuspec = CAPNet\CAPNet.nuspec
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAPNet.Tests", "CAPNet.Tests\CAPNet.Tests.csproj", "{0FB0F282-BED1-4201-81F2-76AD9A05CB5A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAPNet.Cmd", "CAPNet.Cmd\CAPNet.Cmd.csproj", "{497A789E-1A86-4068-8CC9-A94AB30CE668}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDXLNet", "EDXLNet\EDXLNet.csproj", "{3D20BBC7-358C-4EEF-8F85-258A8E7D7AC2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDXLNet.Tests", "EDXLNet.Tests\EDXLNet.Tests.csproj", "{B5D5D966-0419-4C18-BBE7-9B0B4A366965}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CAPNet", "CAPNet\CAPNet.csproj", "{871EB59C-7ABC-4E78-87CF-F15F9A0576FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2834992F-FA0C-4837-9916-1928847EA9C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2834992F-FA0C-4837-9916-1928847EA9C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2834992F-FA0C-4837-9916-1928847EA9C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2834992F-FA0C-4837-9916-1928847EA9C3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0FB0F282-BED1-4201-81F2-76AD9A05CB5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0FB0F282-BED1-4201-81F2-76AD9A05CB5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FB0F282-BED1-4201-81F2-76AD9A05CB5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -37,16 +23,15 @@ Global
 		{497A789E-1A86-4068-8CC9-A94AB30CE668}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{497A789E-1A86-4068-8CC9-A94AB30CE668}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{497A789E-1A86-4068-8CC9-A94AB30CE668}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3D20BBC7-358C-4EEF-8F85-258A8E7D7AC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3D20BBC7-358C-4EEF-8F85-258A8E7D7AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3D20BBC7-358C-4EEF-8F85-258A8E7D7AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3D20BBC7-358C-4EEF-8F85-258A8E7D7AC2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B5D5D966-0419-4C18-BBE7-9B0B4A366965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B5D5D966-0419-4C18-BBE7-9B0B4A366965}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B5D5D966-0419-4C18-BBE7-9B0B4A366965}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B5D5D966-0419-4C18-BBE7-9B0B4A366965}.Release|Any CPU.Build.0 = Release|Any CPU
+		{871EB59C-7ABC-4E78-87CF-F15F9A0576FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{871EB59C-7ABC-4E78-87CF-F15F9A0576FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{871EB59C-7ABC-4E78-87CF-F15F9A0576FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{871EB59C-7ABC-4E78-87CF-F15F9A0576FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6352A50-8ABC-4465-B92A-811B62C36485}
 	EndGlobalSection
 EndGlobal
