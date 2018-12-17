@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Matt Chandler, Teamnet, Damian Hintz</Authors>
-    <Version>2.0.0</Version>
+    <Version>3.0.2</Version>
     <PackageId>DotNet.CommonAlertingProtocol</PackageId>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>A Common Alerting Protocol library for the .NET framework.</Description>
@@ -11,7 +11,7 @@
     <PackageProjectUrl>https://github.com/damianhintz/cap-net</PackageProjectUrl>
     <PackageIconUrl>http://docs.oasis-open.org/emergency/edxl-cap-logo/v1.0/cnd01/CAP-Logos/CAP-Icon-L.png</PackageIconUrl>
     <PackageTags>CAP</PackageTags>
-    <PackageReleaseNotes>Converted to .NET Standard 2.0</PackageReleaseNotes>
+    <PackageReleaseNotes>Fixed: parsing of resource relative uri</PackageReleaseNotes>
     <Product>DotNet.CommonAlertingProtocol</Product>
     <RootNamespace>CAPNet</RootNamespace>
     <AssemblyName>DotNet.CommonAlertingProtocol</AssemblyName>
